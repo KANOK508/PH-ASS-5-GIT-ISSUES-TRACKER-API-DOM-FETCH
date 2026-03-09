@@ -1,0 +1,35 @@
+/* Custom Border Logic for status challenges */
+.border-top-open {
+    border-top: 6px solid #22c55e !important; /* Green */
+}
+
+.border-top-closed {
+    border-top: 6px solid #a855f7 !important; /* Purple */
+}
+
+.active-tab {
+    background-color: #6366F1 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.issue-card {
+    transition: all 0.3s ease;
+}
+
+.issue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+/* Added styling for icon-padding in input (Tailwind pl-10 is used in HTML, this ensures it's robust) */
+#search-input {
+    padding-left: 2.5rem !important; /* pl-10 equivalent to overwrite any base input padding */
+}
